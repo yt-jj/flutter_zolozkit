@@ -1,0 +1,27 @@
+name: flutter_zolozkit
+description: The plugin for inject to zoloz sdk 
+version: 1.2.1
+homepage: https://github.com/yt-jj/flutter_zolozkit
+
+environment:
+  sdk: '>=2.12.0 <4.0.0'
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.zoloz.flutter.plugin.flutter_zolozkit
+        pluginClass: FlutterZolozkitPlugin
+      ios:
+        pluginClass: FlutterZolozkitPlugin
+

@@ -1,0 +1,42 @@
+group 'com.zoloz.flutter.plugin.zolozkit_for_flutter'
+version '1.0'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        mavenCentral()
+        google()
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    if (project.android.hasProperty("namespace")) {
+        namespace "com.zoloz.flutter.plugin.zolozkit_for_flutter"
+    }
+
+    compileSdkVersion 30
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+    dependencies {
+        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+        implementation 'com.zoloz.android.build:zolozkit:1.4.4.240904145406'
+        implementation "com.alibaba:fastjson:1.2.83"
+        implementation "com.squareup.okio:okio:1.17.4@jar"
+    }
+}
