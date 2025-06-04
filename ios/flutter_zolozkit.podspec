@@ -16,7 +16,7 @@ A new flutter plugin project.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'zolozkit', "1.4.6.241113155808"
+  s.dependency 'zolozkit', "1.5.5.250519182352"
   s.platform = :ios, '12.0'
   s.static_framework = true
 
